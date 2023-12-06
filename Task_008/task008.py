@@ -11,7 +11,7 @@ UserLength = int(input("Сколько долек вдоль шоколадки?
 UserWidth = int(input("Сколько долек в ширину?"))
 UserNumber = int(input("Сколько долек вы хотите отломить?"))
 
-if (UserNumber % UserLength == 0) or (UserNumber % UserWidth == 0):
+if (UserNumber <= UserLength * UserWidth) and ((UserNumber % UserLength == 0) or (UserNumber % UserWidth == 0)):
     print("yes")
 else:
     print("no")
